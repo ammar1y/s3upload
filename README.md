@@ -45,7 +45,7 @@ After you download `s3upload` file from this repository, make it executable usin
 chmod +x s3upload
 ```
 
-and then put it in `/usr/local/bin` (or any path in your `$PATH` variable) so you can call it directly from the command line.
+and then put it in `/usr/local/bin` (or [any path in your `$PATH` variable](https://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them)) so you can call it directly from the command line.
 
 ## Usage
 
