@@ -1,10 +1,41 @@
 # s3upload
 
 <br>
-<p style="text-align:center"><img src="./logo.svg" width=500></p>
+<div style="text-align:center;"><img src="./logo.svg" width=500></div>
 <br>
 
 With this simple program, you can upload files to Amazon Web Services(AWS) S3 using one command. It uploads the files, makes them public, and then prints their URLs.
+
+s3upload uses [Boto 3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to deal with AWS S3.
+
+## Prerequisites
+
+This program requires these libraries to be installed:
+
+- Boto 3: install with `pip install boto3`.
+
+- requests: install with `pip install requests`.
+
+### AWS Credentials
+
+For s3upload to be able to connect to your AWS account, you need to add your AWS credentials. It is a simple process.
+
+1. Go to [AWS IAM Console](https://console.aws.amazon.com/iam/home). 
+
+2. Create a new user or use an existing user. 
+
+3. Generate a new set of keys for the user.
+
+4. Create a file named `credentials` in the directory `~/.aws/` (Create `~/.aws/` if it's not already there).
+
+5. Put the following in `credentials` file:
+
+```
+[default]
+aws_access_key_id = YOUR_ACCESS_KEY
+aws_secret_access_key = YOUR_SECRET_KEY
+```
+You're done!
 
 ## Usage
 
@@ -42,3 +73,8 @@ s3up "/Users/abc/xyz/" "bucket_3" -d "2018/Nov/" -ext "png,csv"
 ```
 
 This will upload all png and csv files in the local directory 'xyz' to the directory '2018/Nov/' inside bucket_3.
+
+## License
+
+My work is licensed under MIT.
+Copyright (c) 2018 Ammar Alyousfi
