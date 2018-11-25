@@ -37,6 +37,16 @@ aws_secret_access_key = YOUR_SECRET_KEY
 ```
 You're done!
 
+### Make file executable
+
+After you download `s3upload` file from this repository, make it executable using the command:
+
+```
+chmod +x s3upload
+```
+
+and then put it in `/usr/local/bin` (or any path in your `$PATH` variable) so you can call it directly from the command line.
+
 ## Usage
 
 ```
