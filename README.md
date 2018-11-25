@@ -4,7 +4,7 @@
 <div style="text-align:center;"><img src="./logo.svg" width=500></div>
 <br>
 
-With this simple program, you can upload files to Amazon Web Services(AWS) S3 using one command. It uploads the files, makes them public, and then prints their URLs.
+With this simple program, you can upload multiple files at once to Amazon Web Services(AWS) S3 using one command. It uploads the files, makes them public, and then prints their URLs.
 
 s3upload uses [Boto 3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to deal with AWS S3.
 
