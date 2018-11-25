@@ -1,6 +1,6 @@
 # s3upload
 
-![](./logo.svg)
+<img src="./logo.svg" width=500>
 
 With this simple program, you can upload files to Amazon Web Services(AWS) S3 using one command. It uploads the files, makes them public, and then prints their URLs.
 
