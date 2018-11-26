@@ -50,7 +50,7 @@ and then put it in `/usr/local/bin` (or [any path in your `$PATH` variable](http
 ## Usage
 
 ```
-s3up LOCAL_DIRECTORY BUCKET_NAME [-d DEST_DIRECTORY] [-ext FILES_EXTENSIONS]
+s3upload LOCAL_DIRECTORY BUCKET_NAME [-d DEST_DIRECTORY] [-ext FILES_EXTENSIONS]
 ```
 
 where:
@@ -79,7 +79,7 @@ in the example below.
 ## Example
 
 ```
-s3up "/Users/abc/xyz/" "bucket_3" -d "2018/Nov/" -ext "png,csv"
+s3upload "/Users/abc/xyz/" "bucket_3" -d "2018/Nov/" -ext "png,csv"
 ```
 
 This will upload all png and csv files in the local directory 'xyz' to the directory '2018/Nov/' inside bucket_3.
