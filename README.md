@@ -6,11 +6,11 @@
 
 With this simple program, you can upload multiple files at once to Amazon Web Services(AWS) S3 using one command. It uploads the files, makes them public, and then prints their URLs.
 
-s3upload uses [Boto 3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to deal with AWS S3.
+s3upload is written in Python3, and it uses [Boto 3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to deal with AWS S3.
 
 ## Prerequisites
 
-This program requires these libraries to be installed:
+This program requires Python3 with these libraries:
 
 - Boto 3: install with `pip install boto3`.
 
